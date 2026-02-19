@@ -22,14 +22,14 @@ if menu == "Fechar Caixa":
     col1, col2 = st.columns(2)
 
     with col1:
-        inicio = st.number_input("Valor Inicial (R$)",
+        inicio = st.number_input("Inicio",
                                  min_value=0.0, step=0.01, format="%.2f")
         relatorio = st.number_input(
-            "Relatório da Maquininha (R$)", step=0.01, format="%.2f")
+            "Fechamento", step=0.01, format="%.2f")
 
     with col2:
         final = st.number_input(
-            "Valor Final em Mãos (R$)", min_value=0.0, step=0.01, format="%.2f")
+            "Caixa", min_value=0.0, step=0.01, format="%.2f")
 
     # BOTÃO DE CALCULAR
     if st.button("Verificar Diferença", type="primary"):
@@ -59,3 +59,4 @@ elif menu == "Sobre":
     st.subheader("Sobre o Projeto")
     st.write(
         "Projeto desenvolvido por estudante de ADS para automação de conferência bancária.")
+
