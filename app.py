@@ -12,7 +12,7 @@ st.title("💰 Calculadora de Fechamento")
 st.write("Ferramenta para conferência de caixa bancário.")
 
 # --- BARRA LATERAL (MENU) ---
-menu = st.sidebar.selectbox("Escolha a Opção", ["Fechar Caixa", "Sobre"])
+menu = st.sidebar.selectbox("Escolha a Opção", ["Fechar Caixa", "Saldo", "Sobre"])
 
 if menu == "Fechar Caixa":
     st.markdown("---")
@@ -59,4 +59,5 @@ elif menu == "Sobre":
     st.subheader("Sobre o Projeto")
     st.write(
         "Projeto desenvolvido por estudante de ADS para automação de conferência bancária.")
+
 
